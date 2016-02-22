@@ -15,7 +15,7 @@ stickerApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
       when('/home', {
-        templateUrl: 'index.html',
+        templateUrl: '/index.html',
         controller: 'WhatWeDoCtrl'
       }).
       otherwise({
