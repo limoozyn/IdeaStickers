@@ -16,11 +16,11 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
   <!-- Latest compiled and minified FontAwesome -->
   <link rel="stylesheet" href="fonts\font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
 
   <link rel="stylesheet" href="../bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="../bower_components/html5-boilerplate/dist/css/main.css">
-  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script type='text/javascript' src="js/bootstrap.js"></script>
   <script type='text/javascript' src="js/main.js"></script>
@@ -28,14 +28,9 @@
 
   <script src="../bower_components/angular/angular.js"></script>
   <script src="../bower_components/angular-route/angular-route.js"></script>
-  <script src="app.js"></script>
-  <script src="view1/view1.js"></script>
-  <script src="view2/view2.js"></script>
-  <script src="components/version/version.js"></script>
-  <script src="components/version/version-directive.js"></script>
-  <script src="components/version/interpolate-filter.js"></script>
   <script src="../bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
   <script src="js/controllers.js"></script>
+  <script src="js/app.js"></script>
   
   <!---->
   <!--<style>
@@ -117,78 +112,9 @@
     </div>
   </div>
 </div>
-<div class="yellow-gradient">
-  <div class="container" ng-controller="whatWeDoCtrl"> 
-    <div class = "row">
-            <!--<img src="images/HowWeDoLeftStripe.jpg" /> -->
-        <div class = "col-lg-4">
-          <div class = "innerWhite"></div>
-          <div class = "outerWhite"></div>
-        </div>
-      <div class = "col-lg-4 height110">
-          <p class="whatWeDoFont">ЧТО МЫ ДЕЛАЕМ</p> 
-      </div>
-      <div class = "col-lg-4">
-        <div class = "innerWhite"></div>
-        <div class = "outerWhite"></div>
-          <!--<img src="images/HowWeDoLeftStripe.jpg" /> -->
-      </div>
-    </div>
-    <div class = "row">
-      <div class = "col-lg-6" ng-repeat="type in types">
-        <p class="stickersAndTshirts">{{type.name}}</p>
-        <p class="lorem">{{type.description}}</p>
-        <a href="#/types/{{type.id}}" ><img ng-src="{{type.image}}" /></a>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="white-gradient">
-  <div class="container"> 
-    <div class = "row">
-      <div class = "col-lg-4 ">
-        <div class = "innerYellow"></div>
-        <div class = "outerYellow"></div>
-          <!--<img src="images/WhatWeDoLeftStripe.jpg" /> -->
-      </div>
-      <div class = "col-lg-4 height104">
-          <p class="whatWeDoFont">КАК МЫ ДЕЛАЕМ</p> 
-      </div>
-      <div class = "col-lg-4 ">
-        <div class = "innerYellow"></div>
-        <div class = "outerYellow"></div>
-          <!--<img src="images/WhatWeDoRightStripe.jpg" /> -->
-      </div>
-    </div>
-    <div class = "row">
-      <div class = "col-lg-6">
-        <img src="images/Step1.jpg"/>
-      </div>
-      <div class = "col-lg-6 mt140">
-          <p class="stickersAndTshirts">Шаг 1</p>
-          <p class="lorem">Определяемся с идеей.Делаем набросок либо получаем от заказчика готовыый эскиз.</p>
-      </div>
-    </div>
-        <div class = "row">
-      <div class = "col-lg-6 mt140">
-          <p class="stickersAndTshirts">Шаг 2</p>
-          <p class="lorem">Включаем мозг. Дорабатываем эскиз до готового продукта с изюминкой. Утверждаем с заказчиком работу</p>
-      </div>
-            <div class = "col-lg-6">
-        <img src="images/Step2.jpg"/>
-      </div>
-    </div>
-        <div class = "row">
-      <div class = "col-lg-6">
-        <img src="images/Step3.jpg"/>
-      </div>
-      <div class = "col-lg-6 mt140">
-          <p class="stickersAndTshirts">Шаг 3</p>
-          <p class="lorem">Отдаем готовую работу на изготовление. По готовности связываемся с заказчиком. Договариваемся о встрече.Передаем изделие.</p>
-      </div>
-    </div>
-  </div>
-</div>
+
+<div ng-view></div>
+
 <footer class="footer">
       <div class="container">
         <div class="row">
