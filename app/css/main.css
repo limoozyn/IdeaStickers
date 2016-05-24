@@ -43,11 +43,15 @@ display:inline-block;
 .grey-gradient {
     background:linear-gradient(to top, #dbdbdb, #f7f7f7);
 }
+.main-banner{
+  width: 100%;
+  height: auto;
+}
 
 .footer {
     background-color: #dcd400;
     color: #181d2a;
-    height: 100px;
+    height: 130px;
 }
 
 .yellow-gradient {
@@ -74,7 +78,7 @@ display:inline-block;
 .navbar-default .navbar-nav>li>a {
 background-color:#181d2a;
 color:#dcd400;
-padding-top:74px;
+padding-top:56px;
 }
 
 .navbar-form {
@@ -82,8 +86,13 @@ padding-top:51px;
 }
 
 .dropdown-menu {
-background-color:#181d2a;
+background-color:#dcd400;
 color:#181d2a;
+}
+@media (max-width: 767px){
+  .navbar-nav .open .dropdown-menu {
+    background-color:#dcd400;
+  }
 }
 
 /*.hac{
@@ -109,14 +118,18 @@ margin-bottom: 0;
 }
 
 .copyright {
-font: 14px arial, sans-serif;
-color: #dcd400;
-text-align: right;
-margin-top: 10px;
-margin-right: 22px;
+  font-family:'Roboto',arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #dcd400;
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 22px;
 }
-.nav .navbar-nav .navbar-right>li>a, .copyright {
-font:14px arial, sans-serif;
+.nav.navbar-nav.navbar-right li a {
+  font-family:'Roboto',arial, sans-serif;
+  font-size: 22px;
+  font-weight: 300;
 }
 
 .navbar-default .navbar-nav>.open>a,.navbar-default .navbar-nav>.open>a:focus,.navbar-default .navbar-nav>.open>a:hover {
@@ -132,12 +145,16 @@ background-color:#dcd400;
 background-color:#181d2a;
 }
 
-.btn,.dropdown-menu>li>a,.navbar-default .navbar-toggle,.footer-btn:hover, .footer-btn:focus {
+.btn,/*.dropdown-menu>li>a,*/.navbar-default .navbar-toggle,.footer-btn:hover, .footer-btn:focus {
 background-color:#181d2a;
 color:#dcd400;
 }
 
-.navbar-default .navbar-nav>li>a:hover,.btn:hover,.btn:focus,.dropdown-menu>li>a:hover,.navbar-default .navbar-toggle:hover,.navbar-nav .open>a:hover,.footer-btn {
+.navbar-default .navbar-nav>li>a:hover,
+.btn:hover,.btn:focus,
+.dropdown-menu>li>a/*:hover*/,
+.navbar-default .navbar-toggle:hover,
+.navbar-nav .open>a:hover,.footer-btn {
 background-color:#dcd400;
 color:#181d2a;
 }
@@ -195,24 +212,41 @@ min-height:117px;
 }
 
 .lorem {
-font:18px arial, sans-serif;
+  font-family:'Roboto',arial, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 
 .stickersAndTshirts {
-font:30px arial, sans-serif;
+font:30px 'Roboto', arial, sans-serif;
 }
 
 .whatWeDoFont{
-font:42px arial, sans-serif;
+font:42px 'Roboto', arial, sans-serif;
+margin: 20px 0 20px;
 }
-
+.hide-for-xs{
+  display: block;
+}
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and up) */
 /*@media (max-width: @screen-sm-min) {*/
-@media (max-width: 768px)
+@media (max-width: 1199px){
+  .whatWeDoFont{
+    font-size: 26px;
+    text-align: center;
+  }
+}
+@media (max-width: 991px){
+  .stickersAndTshirts{
+    font-size: 18px;
+    text-align: center;
+  }
+}
+@media (max-width: 767px){
     .navbar-default .navbar-nav .open .dropdown-menu>li>a {
     background-color:#181d2a;
     color:#dcd400;
@@ -222,6 +256,32 @@ font:42px arial, sans-serif;
     background-color:#dcd400;
     color:#181d2a;
     
+    }
+    .centered-image{
+      margin: 0 auto;
+    }
+    .mt140{
+      margin-top:20px;
+    }
+    .innerWhite{
+      height: 30px;
+    }
+    .height110{
+      margin-top: 30px;
+      height: 50px;
+    }
+    .hide-for-xs{
+      display: none;
+    }
+    .innerYellow {
+      height: 30px;
+    }
+    .height104{
+      height: 30px;
+      margin-top: 20px;
+    }
+    .footer{
+      height: 130px;
     }
 }
 
