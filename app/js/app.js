@@ -2,7 +2,7 @@ var ideaSticksApp = angular.module('ideaSticksApp', [
   'ngRoute',
   'ideaSticksControllers'
 ]);
-ideaSticksApp.config(['$routeProvider',
+ideaSticksApp.config(
   function($routeProvider) {
     $routeProvider.
       when('/types', {
@@ -17,4 +17,4 @@ ideaSticksApp.config(['$routeProvider',
         redirectTo: '/types'
       });
   }
-]);
+);
