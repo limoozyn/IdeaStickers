@@ -12,6 +12,5 @@ ideaSticksApp.config(['$routeProvider',
       otherwise({
         redirectTo: '/types'
       });
-
   }
 ]);
