@@ -9,10 +9,6 @@ ideaSticksApp.config(['$routeProvider',
         templateUrl: 'partials/frontpage.html',
         controller: 'whatWeDoCtrl'
       }).
-/*      when('/types/:typeId', {
-        templateUrl: 'partials/type-detail.html',
-        controller: 'detailCtrl'
-      }).*/
       otherwise({
         redirectTo: '/types'
       });
